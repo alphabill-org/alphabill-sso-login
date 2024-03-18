@@ -1,5 +1,7 @@
+import { CHAIN_NAMESPACES } from "@web3auth/base";
+
 export const AB_WEB3AUTH_CONF = {
-    AB_testnet = {
+    AB_testnet: {
 	chainNamespace: CHAIN_NAMESPACES.OTHER,
         chainId: "0x1",
         rpcTarget: "https://money-backend.testnet.alphabill.org",
@@ -7,27 +9,39 @@ export const AB_WEB3AUTH_CONF = {
         ticker: "AB",
         tickerName: "Alphabill",
     },
-    AB_mainnet = {
+    AB_mainnet: {
 	// NOT IMPLEMENTED YET
     },
 }
 
-export setRpcsUrl = (conf, url) => {
-    conf.rpcTarget = url;
-    return conf;
+export function setRpcsUrl(conf, url){
+    const newConf = {
+	...conf,
+	rpcTarget: url
+    }
+    return newConf;
 }
 
-export setDisplayName = (conf, name) => {
-    conf.displayName = name;
-    return conf;
+export function setDisplayName(conf, name){
+    const newConf = {
+	...conf,
+	displayName: name
+    }
+    return newConf;
 }
 
-export setTicker = (conf, ticker) => {
-    conf.ticker = ticker;
-    return conf;
+export function setTicker(conf, ticker){
+    const newConf = {
+	...conf,
+	ticker
+    }
+    return newConf;
 }
 
-export setTicker = (conf, tickerName) => {
-    conf.tickerName = tickerName;
-    return conf;
+export function setTickerName(conf, tickerName){
+    const newConf = {
+	...conf,
+	tickerName
+    }
+    return newConf;
 }

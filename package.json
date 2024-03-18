@@ -1,0 +1,17 @@
+{
+  "name": "alphabill-sso-login",
+  "version": "1.0.0",
+  "description": "This project involves the use of \"web3auth.js\" which is a ES6 JavaScript module performing various operations related to web3auth secret key.",
+  "main": "web3auth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@web3auth/base": "^7.3.2",
+    "@web3auth/base-provider": "^7.3.2",
+    "@web3auth/openlogin-adapter": "^7.3.2"
+  }
+}
