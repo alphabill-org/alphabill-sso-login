@@ -7,7 +7,7 @@ Currently, we support Web3Auth platform.
 In our roadmap we plan to add zkLogin.
 
 ## Installation Instructions
-npm install -s alphabill-sso-login
+`npm install -s alphabill-sso-login`
 
 ## Usage Instructions (Web3Auth only)
  * Import: import { init, recoverSecret, getEntropy, getMnemonic, getSeed, getMasterKey, getPrivateKeyBytes, getPublicKeyBytes, forgetSecret } from "alphabill-sso-login/web3auth.js"
@@ -19,7 +19,7 @@ npm install -s alphabill-sso-login
 
 ## Examples
 
-'''
+```javascript
 import { init, recoverSecret, getEntropy, getMnemonic, getSeed, getMasterKey, getPrivateKeyBytes, getPublicKeyBytes, forgetSecret } from "alphabill-sso-login/web3auth.js";
 
 export const connect = () => {
@@ -36,4 +36,4 @@ export const connect = () => {
 window.onload = () => {
     init('<your-client-id-from-web3auth.io>');
 }
-'''
+```
