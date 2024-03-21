@@ -1,6 +1,6 @@
 {
   "name": "alphabill-sso-login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is provider of cryptomaterials for Alphabill blockchain ecosystem. It is based on SSO login providers for blockchain, like web3auth",
   "main": "web3auth.js",
   "scripts": {
